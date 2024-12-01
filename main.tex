@@ -204,7 +204,7 @@ Ligatures=TeX]{Linux Libertine O}
     \end{itemize}
   \end{block}
   \begin{figure}
-    \includegraphics[width=0.55\textwidth]{images/settings.png}
+    \includegraphics[width=0.5\textwidth]{images/settings.png}
     \caption{Ρύθμιση OBS για αναμετάδοση στο YouTube}
     \label{fig:settings}
   \end{figure}
@@ -219,6 +219,56 @@ Ligatures=TeX]{Linux Libertine O}
     \item Ποτέ μην το μοιράζεστε με κάποιον που δεν εμπιστεύεστε.
   \end{itemize}
 \end{alertblock}
+\end{frame}
+\subsubsection{Τι είναι το RTMPS;}
+\begin{frame}[allowframebreaks]{Σχετικά με RTMP και RTMPS}
+  \begin{exampleblock}{Τι είναι το RTMPS;}
+    Το RTMPS είναι ένα πρωτόκολλο ασφαλείας που χρησιμοποιείται για την αναμετάδοση περιεχομένου σε πλατφόρμες όπως το YouTube και το Twitch.
+    Περιληπτικά:
+    % πες και τι είναι το RTMP
+    \begin{itemize}
+      \item Το RTMPS είναι μια ασφαλής εκδοχή του RTMP
+      \item Χρησιμοποιεί κρυπτογράφηση για την ασφαλή μεταφορά των δεδομένων
+      \item Χρησιμοποιείται κυρίως για την αναμετάδοση περιεχομένου σε πλατφόρμες όπως το YouTube και το Twitch
+    \end{itemize}
+  \end{exampleblock}
+  \begin{exampleblock}{Τι είναι το RTMP}
+    \begin{itemize}
+      \item \textbf{Τι είναι:} Πρωτόκολλο μετάδοσης δεδομένων σε πραγματικό χρόνο που αναπτύχθηκε από την Adobe Systems.
+      \item \textbf{Κύριος σκοπός:} Χρησιμοποιείται για τη μετάδοση βίντεο, ήχου και δεδομένων μέσω του Διαδικτύου.
+      \item \textbf{Λειτουργία:} Βασίζεται σε μια συνεχή σύνδεση TCP για χαμηλή καθυστέρηση και σταθερή ροή.
+      \item \textbf{Κύριες χρήσεις:} 
+          \begin{itemize}
+              \item Ζωντανό streaming.
+              \item Μεταφορά πολυμέσων σε πλατφόρμες όπως YouTube, Twitch, Facebook Live.
+          \end{itemize}
+      \item \textbf{Πλεονεκτήματα:}
+          \begin{itemize}
+              \item Χαμηλή καθυστέρηση.
+              \item Υποστήριξη προσαρμοστικού streaming.
+          \end{itemize}
+      \item \textbf{Μειονεκτήματα:}
+          \begin{itemize}
+              \item Βασίζεται σε κλειστό πρωτόκολλο (Adobe).
+              \item Χρησιμοποιεί TCP, που μπορεί να προκαλέσει καθυστερήσεις σε ασύρματα δίκτυα.
+          \end{itemize}
+  \end{itemize}
+  \end{exampleblock}
+\end{frame}
+\subsection{Ρύθμιση OBS για Zoom}
+\begin{frame}{Ρύθμιση  για το Zoom}
+  Η αναμετάδοση με το Zoom είναι γίνεται με διαφορετικό\footnote{και ίσως πιο απλό απο το YouTube} τρόπο. Αναλυτικά:
+  \begin{block}
+    {Ρύθμιση OBS για αναμετάδοση στο Zoom}
+    \begin{itemize}
+      \item Ανοίγουμε το OBS
+      \item Πηγαίνουμε στις ρυθμίσεις
+      \item Επιλέγουμε την καρτέλα \textbf{Video/Βίντεο}
+      \item Επιλέγουμε το \textbf{Camera/Κάμερα} του OBS
+      \item Πηγαίνουμε στο Zoom και επιλέγουμε το \textbf{OBS Virtual Camera} ως κάμερα
+      \item Πατάμε \textbf{Start Streaming/Έναρξη Ροής} απο την κεντρική οθόνη του OBS
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \section{Συνάντηση δια-ζώσης}
@@ -239,7 +289,7 @@ Ligatures=TeX]{Linux Libertine O}
     Θα δούμε αναλυτικά:
     \begin{itemize}
       \item Πώς να προσθέσουμε και να διαχειριστούμε πηγές (κάμερες, μικρόφωνα, εικόνες, κ.λπ.)
-      \item Πώς να δημιουργήσουμε και να εναλάσσουμε σκηνές
+      \item Πώς να δημιουργήσουμε και να εναλλάσσουμε σκηνές
       \item Πώς να ρυθμίσουμε τις παραμέτρους για βέλτιστη ποιότητα αναμετάδοσης
       \item Πώς να χρησιμοποιήσουμε τα εργαλεία του OBS για να προσθέσουμε γραφικά και κείμενο
       \item Πώς να ενσωματώσουμε το OBS με πλατφόρμες αναμετάδοσης όπως το YouTube και το Zoom

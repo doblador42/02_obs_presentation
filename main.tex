@@ -20,7 +20,7 @@ Ligatures=TeX]{Linux Libertine O}
 \newfontfamily\greekfontsf{Linux Libertine O}
 \usetheme{Madrid}
 \usecolortheme{beaver}
-\title{Εισαγωγή στο λογισμικό της διαδικτυακής αναμετάδοσης}
+\title{Λογισμικό διαδικτυακής αναμετάδοσης}
 \subtitle{\href{https://obsproject.com/}{OBS (Open Broadcaster Software)} και πλατφόρμες διαδικτυακής αναμετάδοσης} 
 \author{Ερμής Δούλος (\textit{dit17046@uop.gr})}
 \begin{document}
@@ -172,6 +172,55 @@ Ligatures=TeX]{Linux Libertine O}
     \end{figure}
   \end{block}
 \end{frame}
+\section{Πλατφόρμες αναμετάδοσης}
+\begin{frame}{Οι διαδικτυακές πλατφόρμες αναμετάδοσης και τηλεδιασκέψεων}
+  \begin{block}{Πλατφόρμες}
+    \begin{itemize}
+      \item \textbf{\href{https://www.youtube.com/}{YouTube}}
+      \item \textbf{\href{https://zoom.us/}{Zoom}}
+      \item \textbf{\href{https://www.webex.com/}{Webex}}
+      \item \textbf{\href{https://www.microsoft.com/el-gr/microsoft-teams/group-chat-software}{Teams}}
+    \end{itemize}
+  \end{block}
+  Εμείς θα ασχοληθούμε κυρίως με το \textbf{YouTube} και το \textbf{Zoom}. Κάποια βασικά στοιχεία που θα
+  πρέπει να γνωρίζουμε για την αναμετάδοση σε αυτές τις πλατφόρμες, χρησιμοποιώντας το \textbf{OBS}, είναι:
+  \begin{enumerate}
+    \item Πώς να ρυθμίσουμε το OBS για να αναμεταδώσουμε στο YouTube
+    \item Πώς να ρυθμίσουμε το OBS για να αναμεταδώσουμε στο Zoom
+  \end{enumerate}
+\end{frame}
+\subsection{Ρύθμιση OBS για YouTube}
+\begin{frame}[allowframebreaks]{YouTube}
+  \begin{block}{Ρύθμιση για αναμετάδοση στο YouTube}
+    \begin{itemize}
+      \item Ανοίγουμε το OBS
+      \item Πηγαίνουμε στις ρυθμίσεις
+      \item Επιλέγουμε την καρτέλα \textbf{Streaming/Ροή}
+      \item Επιλέγουμε το \textbf{Service/Υπηρεσία} \textbf{YouTube - RTMPS}
+      \item Πηγαίνουμε στο YouTube και αντιγράφουμε το \textbf{Stream Key}
+      \item Επικολλάμε το \textbf{Stream Key} στο OBS (RTMPS Key)
+      \item Πατάμε \textbf{Apply/Εφαρμογή} και \textbf{OK}, όπως φαίνεται στην εικόνα \ref{fig:settings}
+      \item Πατάμε \textbf{Start Streaming/Έναρξη Ροής} απο την κεντρική οθόνη του OBS, όπως φαίνεται στην εικόνα~\ref{fig:obs2youtube}
+    \end{itemize}
+  \end{block}
+  \begin{figure}
+    \includegraphics[width=0.55\textwidth]{images/settings.png}
+    \caption{Ρύθμιση OBS για αναμετάδοση στο YouTube}
+    \label{fig:settings}
+  \end{figure}
+  \begin{figure}
+    \includegraphics[width=0.65\textwidth]{images/obs2youtube.png}
+    \caption{Έναρξη της ροής OBS \rightarrow YouTube}
+    \label{fig:obs2youtube}
+  \end{figure}
+\begin{alertblock}{Προσοχή!}
+  \begin{itemize}
+    \item Κάθε Live Stream έχει το δικό του RTMPS κλειδί.
+    \item Ποτέ μην το μοιράζεστε με κάποιον που δεν εμπιστεύεστε.
+  \end{itemize}
+\end{alertblock}
+\end{frame}
+
 \section{Συνάντηση δια-ζώσης}
 \begin{frame}[allowframebreaks]{Εξάσκηση στο OBS}
   \begin{alertblock}{Πότε και πού}
@@ -196,14 +245,16 @@ Ligatures=TeX]{Linux Libertine O}
       \item Πώς να ενσωματώσουμε το OBS με πλατφόρμες αναμετάδοσης όπως το YouTube και το Zoom
     \end{itemize}
   \end{exampleblock}
-  \begin{alertblock}
-    {Προσοχή!}
+  \begin{exampleblock}
+    {Τι θα χρησιμοποιήσουμε;}
     \begin{itemize}
-      \item Προτείνεται να φέρετε το δικό σας φορητό υπολογιστή
-      \item Θα χρειαστείτε λογαριασμό στο YouTube για την αναμετάδοση
-      \item Θα χρειαστείτε λογαριασμό στο Zoom για την αναμετάδοση
+      \item Θα δοθούν εκτυπωμένα φυλλάδια με τις οδηγίες για τα ότι θα καλύψουμε στο εργαστήριο
+      \item Τους υπολογιστές του εργαστηρίου για να στήσουμε τις δικές μας σκηνές στο OBS
+      \item Όρεξη
+      \item Χαμόγελο
+      \item Ενθουσιασμό :)
     \end{itemize}
-  \end{alertblock}
+  \end{exampleblock}
 \end{frame}
 
 \begin{frame}{Ευχαριστώ για την προσοχή σας!}
